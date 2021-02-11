@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Quiz</title>
+</head>
+
+<section id="high-score-log">
+    <button id="high-scores"> All Time High Scores! </button>
+</section>
+
+<section id="timer">
+
+    <p> Time Remaining!:
+        <span id="time"> 70 </span>
+    </p>
+
+</section>
+
+<body>
+    <section id="quiz-header">
+
+        <h2> Star Wars Quiz </h2>
+
+        <p> Test your knowledge of the Star Wars universe with this quiz. You will have 70 seconds to complete the quiz.
+            Each incorrect answer will deduct 5 seconds from your time. Good Luck!</p>
+
+        <button id="begin"> Begin </button>
+
+    </section>
+
+    <section id="quiz-body">
+
+        <div id="quiz-questions"> </div>
+        <div>
+            <button id="choice-one"> </button>
+
+            <button id="choice-two"> </button>
+
+            <button id="choice-three"> </button>
+
+            <button id="choice-four"> </button>
+
+            <button id="choice-five"> </button>
+        </div>
+
+        <section id="player-score"> </section>
+
+    </section>
+
+    <section id="quiz-footer">
+
+        <h2> Quiz Complete! </h2>
+        <p> Final Score: <span id="score"> </span> </p>
+        <div id="record-score">
+            <p> Enter Player Initials below: </p>
+            <input id="player-initials" type="text">
+            <button> Submit </button>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
