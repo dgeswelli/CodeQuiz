@@ -65,13 +65,13 @@ var quiz =  {
         text: ["Luke Skywalker", "Han Solo", "Darth Vader", "Yoda", "Obi Wan"],
         correctanswer: 2},
 
-        {question: "Who ruled the galaxy before the Galactic Empire?",
+        {prompt: "Who ruled the galaxy before the Galactic Empire?",
         text: ["The Gungans", "The Jawas", "The Trade Federation", "The Republic", "The Jedi Council"],
         correctanswer: 3},
     ],
 
 }
-// console.log(quiz.quizQuestions.text)
+console.log(quiz.question)
 
 
 
