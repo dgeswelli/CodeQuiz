@@ -1,7 +1,7 @@
 // developed global variables for the timer to be able to function properly, a score storing global variable, and global variables for each button listed in the html //
 
 var score = 0;
-var questionId = document.querySelector("#question");
+var questionId = document.querySelector("#questionId");
 var answer = document.querySelector("#answer");
 var choiceOne = document.querySelector("#choiceOne");
 var choiceTwo = document.querySelector("#choiceTwo");
@@ -11,7 +11,7 @@ var choiceFive = document.querySelector("#choiceFive");
 var begin = document.querySelector("#begin");
 var submit = document.querySelector("#submit")
 var timeLimit = 70;
-var qIndex = 0
+var qIndex = 0;
 var time = document.querySelector("#time");
 
 // developed function for the quiz timer, set to log the response "Time Limit Reached" when timer hits 0 //
@@ -30,7 +30,8 @@ function quizTimer() {
 };
 
 function nextQuestion() {
-    if (qIndex ===(quiz.question.length - 1)) {
+    console.log(quiz.question.length)
+    if (qIndex <=(quiz.question.length - 1)) {
         questionId.innerHTML = quiz.question[0].prompt;
         choiceOne.innerHTML = quiz.question[0].text[0]
         choiceTwo.innerHTML = quiz.question[0].text[1]
